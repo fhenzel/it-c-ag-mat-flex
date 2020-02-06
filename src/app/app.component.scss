@@ -1,25 +1,32 @@
-:host{
-  box-sizing: border-box;
-  display: block;
-  height: 100%;
-
-  .wrapper{
-    min-height: calc(100% - 112px); 
-    height: calc(100% - 112px);
+:host {
     box-sizing: border-box;
-  }
-  .table-flex-container{
+    display: block;
     height: 100%;
-    position: relative;
-    overflow: hidden;
-    display: flex;
 
-    .table-overflow-container {
-      position: relative;
-      overflow-x: hidden;
-      overflow-y: auto;
-      z-index: 1;
-      flex-grow: 1;
+    .wrapper {
+        min-height: calc(100% - 112px);
+        height: calc(100% - 112px);
+        box-sizing: border-box;
     }
-  }
+
+    .table-flex-container {
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+
+        .table-overflow-container {
+            position: relative;
+            overflow-x: hidden;
+            overflow-y: auto;
+            z-index: 1;
+            flex-grow: 1;
+        }
+    }
+
+    mat-toolbar {
+        .placeholder-right {
+            width: 158px;
+        }
+    }
 }

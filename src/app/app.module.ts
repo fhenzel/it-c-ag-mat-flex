@@ -6,8 +6,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppComponent } from './app.component';
 import { SampleContentComponent } from './sample-content/sample-content.component';
 
-
-import { 
+import {
   MatProgressSpinnerModule, 
 MAT_PROGRESS_SPINNER_DEFAULT_OPTIONS,
 MatTabsModule,
